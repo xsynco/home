@@ -1,0 +1,178 @@
+@font-face {
+font-family: vs;
+src: url('vs.ttf');
+}
+
+@font-face {
+font-family: vsi;
+src: url('vsi.ttf');
+}
+
+@font-face {
+font-family: smallf;
+src: url('small.fon');
+}
+
+body {
+    margin:0; padding:0 ;
+    background-image: url(forumbg.png);
+    background-repeat: repeat;
+    background-color: #111;
+    overflow:hidden;
+}
+html {
+  overflow-y: scroll;
+    overflow: hidden;
+}
+
+/*///////////////////////////
+//////// NAVBAR START ///////
+///////////////////////////*/
+
+#navmain {
+    width:980px;
+}
+
+#nav {
+    position:fixed;
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #FFF;
+	border-bottom: 2px solid #FFF;
+	font-family: "Arial", Gadget, sans-serif;
+    z-index: 1;
+}
+
+#nav ul {
+    position: relative;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0; 
+}
+
+#nav li {
+	float: left; 
+}
+
+#nav li form{
+	margin:8px 0px 0px 0px; 
+    	padding: 0px 0px 0px 10px;
+}
+
+#nav li a {
+	display: block;
+	padding: 9px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+    font-style: italic;
+}
+
+#nav li:first-child a {
+    padding: 2px 10px 0 0;
+    border: 0px; 
+}
+
+#nav li:first-child img:hover {
+  background-color: #FFF;
+  -webkit-filter: grayscale(50%);
+}
+
+#nav li a:hover {
+	color: #000;
+
+}
+
+#nav ul ul {
+	display: none;
+    background: #FFF;
+	position: absolute;
+}
+
+#nav ul li:hover > ul {
+    display: block;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#nav ul ul li a {
+	display: block;
+	padding: 4px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+#nav ul ul li a:hover {
+	color: #e400ff;
+}
+#nav ul ul li:first-child a {
+    color: #000;
+    padding: 4px 10px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+#nav ul ul li:first-child a:hover {
+    color: #e400ff;
+    padding: 4px 10px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*///////////////////////////
+//////// NAVBAR END /////////
+///////////////////////////*/
+
+#contentbg {
+    position:fixed;
+    background-color: #EEE;
+    opacity: 1;
+    width:980px;
+    height: 100%;
+    left:50%;
+    margin:35px 0 0 -490px;
+    padding: 35px 15px 15px 15px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#content {
+    position:absolute;
+    color:#666;
+    width:980px;
+    overflow: hidden;
+    left:50%;
+    margin:35px 0 0 -490px;
+    padding: 35px 15px 100px 15px;
+    z-index: 0;
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: 14px;
+    text-shadow: 0px 1px #333;
+    min-height: 500px;
+    overflow: hidden;
+
+}
+
+#content img {
+    position: absolute;
+    left:50%;
+    margin:150px 0 0 -316px;
+    overflow: hidden;
+}
+
+#bgVideo{ 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: 0;
+	margin-top: 40px;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background-color: #111;
+    overflow: hidden;
+}
